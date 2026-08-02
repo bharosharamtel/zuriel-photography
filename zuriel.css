@@ -1,0 +1,1450 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@1,100..400&display=swap');
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+   /* font-family: "Playwrite GB S", cursive;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    user-select: none;   
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none
+}
+.hidden {
+    display: none;
+}
+
+#closeform {
+    margin-left: 230px; 
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000000;
+    background: #feebd0;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+#formBox form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  z-index: 3;
+}
+body.form-open  #formBox::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.589); /* Semi-transparent overlay */
+        transition: ease 0.3s;
+    }
+#formBox{ 
+        
+        position: fixed;
+        top: 0;
+        left: -3000px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.541);
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        
+    }
+    body.form-open #formBox {
+        left: 0px;
+
+
+    }
+#closeform2{
+    margin-left: 230px; 
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000000;
+    background: #feebd0;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+#formBox2 form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  z-index: 3;
+}
+body.form-open2  #formBox2::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.589); /* Semi-transparent overlay */
+        transition: ease 0.3s;
+    }
+#formBox2{ 
+        
+        position: fixed;
+        top: 0;
+        left: -3000px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.541);
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        
+    }
+    body.form-open2 #formBox2 {
+        left: 0px;
+
+
+    }
+    
+#closeform3{
+    margin-left: 230px; 
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000000;
+    background: #feebd0;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+#formBox3 form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  z-index: 3;
+}
+body.form-open3  #formBox3::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.589); /* Semi-transparent overlay */
+        transition: ease 0.3s;
+    }
+#formBox3{ 
+        
+        position: fixed;
+        top: 0;
+        left: -3000px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.541);
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        
+    }
+    body.form-open3 #formBox3 {
+        left: 0px;
+
+
+    }
+   #closeform4{
+    margin-left: 230px; 
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000000;
+    background: #feebd0;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+#formBox4 form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  z-index: 3;
+}
+body.form-open4  #formBox4::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.589); /* Semi-transparent overlay */
+        transition: ease 0.3s;
+    }
+#formBox4{ 
+        
+        position: fixed;
+        top: 0;
+        left: -3000px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.541);
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        
+    }
+    body.form-open4 #formBox4 {
+        left: 0px;
+
+
+    } 
+    #closeform5{
+    margin-left: 230px; 
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000000;
+    background: #feebd0;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+#formBox5 form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  z-index: 3;
+}
+body.form-open5  #formBox5::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.589); /* Semi-transparent overlay */
+        transition: ease 0.3s;
+    }
+#formBox5{ 
+        
+        position: fixed;
+        top: 0;
+        left: -3000px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.541);
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        
+    }
+    body.form-open5 #formBox5 {
+        left: 0px;
+
+
+    }
+    #closeform6{
+    margin-left: 230px; 
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000000;
+    background: #feebd0;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+#formBox6 form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  z-index: 3;
+}
+body.form-open6  #formBox6::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.589); /* Semi-transparent overlay */
+        transition: ease 0.3s;
+    }
+#formBox6{ 
+        
+        position: fixed;
+        top: 0;
+        left: -3000px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.541);
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        
+    }
+    body.form-open6 #formBox6 {
+        left: 0px;
+
+
+    }
+    
+
+#about, #portfolio, #wedding , #booking, #collections, #contact{
+ 
+  scroll-margin-top: 70px;
+  scroll-behavior: smooth;
+  transition: ease 0.3s;
+}
+
+
+/* navbar style */
+.nav{
+    background-color: #feebd0;
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    padding:10px;
+    padding-bottom: 20px;
+    z-index: 1000;
+    
+    
+    
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 25px; /* space between image and text */
+    text-decoration: none;
+}
+
+.logo-photo{
+    width: 40px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.logo{
+    margin: 10px;
+    margin-top: 0px;
+    letter-spacing: 3px;
+}
+.logo-subtitle{
+    font-size: 0.8rem;
+    letter-spacing: 6px;
+    color: rgb(0, 0, 0);
+    margin-top: -18px;
+
+}
+
+.navbar .nav-logo .logo{
+    color: rgb(0, 0, 0);
+    font-family: "Playwrite GB S", cursive;
+}  
+.nav .navbar{
+display: flex;
+align-items:center;
+justify-content: space-between;
+
+
+}
+.navbar .navmenu{
+    display: flex;
+    gap: 6px;
+}
+.test{
+    width: 85%;
+    margin-left: 125px;
+}
+
+.navbar .navmenu .navlink {
+ color: rgb(0, 0, 0);
+ padding: 10px ;
+ border-radius: 25px;
+ transition: 0.8s ease;
+ font-family: "Playwrite GB S", cursive;
+}
+.navbar .navmenu .navlink:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(243, 0, 0);
+}
+/* other style*/
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+img{
+    width: 100%;
+}
+/* about me */
+.main{
+    background-color: #ffffff;
+    width: 100%;
+    height: 680px;
+
+    
+    position: relative;
+    z-index: -1;
+    
+}
+.portfolio-about {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 70px;
+    padding: 20px;
+}
+
+/* Image Styling */
+.image-wrapper {
+    width: 500px;
+    height: 500px;
+    border: 4px solid #4a4a4a; /* Subtle border around the frame */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlapping Text Content Card */
+.content-box {
+    background-color: #000000; /* Pure black box */
+    color: #ffffff;
+    padding: 50px 40px;
+    width: 450px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    justify-content: center;
+    
+    /* This creates the overlap effect */
+    margin-left: -80px; 
+    z-index: 2;
+    
+    /* Adds a clean, sharp look */
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5); 
+}
+
+/* Typography */
+.content-box h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.content-box p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    font-weight: 300;
+}
+.navbar :where(#menu-open-button, #menu-close-button) {
+    display: none;
+}
+/* portfolio section */
+.Portfolio-section {
+    background-color: #ffffff;
+    width: 100%;
+    height: 2000px;
+}
+.Portfolio-section .portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the gallery */
+    background-color: #f8f6f6;
+    
+}
+
+.Portfolio{
+    width: 100%;
+    text-align: center;
+    
+    padding: 20px;
+    background-color: #feebd0;
+}
+.Portfolio h1{
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 25px;
+    box-align:center;
+    color: #000000;
+    margin-left: 20px;
+    
+    font-family: "Playwrite GB S", cursive;
+    text-transform: uppercase;
+}
+
+.Portfolio-section .Portfolio-subtitle{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #000000;
+    text-align: center;
+    margin: 10px 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.gallery-item:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    z-index: 1;
+}
+
+
+/* wedding section */
+.wedding-section {
+    background-color: #fcfcfc;
+    width: 100%;
+    height: 2000px;
+}
+.wedding{
+    width: 100%;
+    text-align: center;
+    
+    padding: 20px;
+    background-color: #feebd0;
+}
+.wedding-section .portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the gallery */
+    background-color: #f8f6f6;
+    
+}
+.wedding h1{
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 20px;
+    box-align:center;
+    color: #000000;
+    margin-left: 20px;
+    
+    font-family: "Playwrite GB S", cursive;
+    text-transform: uppercase;
+}
+
+/* booking section */
+.booking-section {
+    background-color: #ffffff;
+    width: 100%;
+    height: 1230px;
+    
+    
+}
+.booking{
+    width: 100%;
+    text-align: center;
+    
+    padding: 20px;
+    background-color: #feebd0;
+}
+.booking h1{
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    box-align:center;
+    color: #000000;
+    margin-left: 20px;
+    font-family: "Playwrite GB S", cursive;
+    text-transform: uppercase;
+}
+
+
+
+
+/* The Main Grid Container */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr)); /* 3 Columns */
+  gap: 30px; /* Space between the cards */
+  max-width: 1200px;
+  
+  margin: 0 auto; /* Centers the whole section on the page */
+}
+
+/* Individual Service Cards */
+.box {
+  background: #ffffff;
+  border: 1px solid #999999; /* The thin light grey border */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  box-shadow: #00000062 10px 10px 20px 0px; /* Subtle shadow for depth */
+  
+}
+
+
+/* Image container & Crop */
+.photo {
+  width: 100%;
+  height: 250px; /* Forces all images to have the exact same height */
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crops image cleanly without stretching it */
+}
+.photo img:hover {
+  transform: scale(1.05);
+  
+  background-color: rgba(66, 65, 65, 0.329); /* Slight zoom on hover for interactivity */
+  transition:0.3s ease;
+  position: none;
+  z-index: -1;
+  object-fit: cover;
+}   
+
+/* Text & Details Area */
+.card-content {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Service Titles */
+.card-content h3 {
+  font-size: 22px;
+  font-weight: 300; /* Thinner elegant text */
+  color: #000000;
+  margin: 0 0 15px 0;
+  line-height: 1.3;
+}
+
+/* Hours/Duration styling */
+.card-content .time {
+  font-size: 14px;
+  color: #333333;
+  margin: 0 0 15px 0;
+}
+
+/* Pricing styling */
+.card-content .price {
+    margin: 0 0 30px 0;
+}
+
+/* Request to Book Button */
+.book-btn {
+  background-color: #222222; /* Dark grey/black button */
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Button Hover State */
+.book-btn:hover {
+  background-color: #444444; 
+}
+/* --- collection section --- */
+.collection-section {
+    background-color: #ffffff;
+    width: 100%;
+    height: 1000px;
+}
+.collection-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    height: 450px;
+    margin: 5% auto; /* Center the gallery */
+    background-color: #ffffff;
+}
+.collection-card{
+    background: #9c1c1c;
+    border: 1px solid #999999; /* The thin light grey border */
+    
+    flex-direction: column;
+    
+    text-align: center;
+    margin-top: 9px;
+    
+    margin-left: 30px;
+    box-shadow: #00000062 10px 10px 20px 0px; /* Subtle shadow for depth */
+    width: 500px;
+    height: 330px;
+    
+}
+.collection-card h2 {
+   margin-top: -180px;
+   color: #000000;
+   
+}
+#collection-card1:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+#collection-card2:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    z-index: 1;
+}
+
+.collection-card .fashion {
+    margin-top: -380px;
+    color: #000000;
+    
+}
+.collection{
+    width: 100%;
+    text-align: center;
+    
+    padding: 20px;
+    background-color: #feebd0;
+}
+.collection h1{
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 25px;
+    box-align:center;
+    color: #000000;
+    margin-left: 20px;
+    
+    font-family: "Playwrite GB S", cursive;
+    text-transform: uppercase;
+}
+/* contact section */
+.contact-section {
+    background-color: #ffffff;
+    width: 100%;
+    height: 800px;
+}
+.contact{
+    width: 100%;
+    text-align: center;
+    
+    padding: 20px;
+    background-color: #feebd0;
+}
+.contact h1{
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 25px;
+    box-align:center;
+    color: #000000;
+    margin-left: 20px;
+    
+    font-family: "Playwrite GB S", cursive;
+    text-transform: uppercase;
+}
+.contact-section .contact-subtitle{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+   
+    color: #000000;
+    text-align: left;
+    margin: 30px 150px 10px 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* --- Responsive Layout for Mobile Phones --- */
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr; /* Stacks cards into 1 column on mobile */
+    gap: 20px;
+  }
+}
+
+
+.book-btn{
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.book-btn-link {
+  background-color: #222222;
+  color: #ffffff;
+  text-decoration: none; /* Removes the underline from link */
+  padding: 12px 24px;
+  font-size: 13px;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.book-btn-link:hover {
+  background-color: #444444; 
+}
+.insidesubtitle{
+    font-size: 38px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.inside-contact{
+    width: 80%;
+    height: 750px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #feebd0;
+    padding: 20px;
+    margin-left: 10%;
+}
+
+.contact-phone{
+    margin-top:30px;
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-phoneno{
+    margin-top:5px;
+    font-size: 18px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-email{
+    margin-top:-57px;
+    font-size: 20px;
+    margin-left: 370px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-emailno{
+    margin-top:5px;
+    font-size: 18px;
+    margin-left: 370px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-media{
+    margin-top:-57px;
+    font-size: 20px;
+    margin-left: 770px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-mediano{
+    margin-top:5px;
+    font-size: 18px;
+    margin-left: 770px;
+    font-family: 'Montserrat', sans-serif;
+}
+.fa-brands{
+    color: black;
+    font-size: 25px;
+   
+}
+/* Core Form Styling */
+#form7 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;                  /* Vertical gap between rows */
+  max-width: 1100px;
+  margin-top: 30px;          /* Matches your portfolio structure alignment */
+  
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Row Layout Configurations */
+.form-row-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 identical columns */
+  gap: 20px;                             /* Space between boxes */
+}
+
+.form-row-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 identical columns */
+  gap: 20px;                             /* Space between boxes */
+}
+
+/* Label and Input Groups */
+.field2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;                              /* Space between text and box */
+}
+
+.field2 label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* Input Fields and Textarea Styles */
+.field2 input[type="text"],
+.field2 input[type="email"],
+.field2 textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #000000;             /* Matches the red accent highlight borders in photo */
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  color: #000000;
+  box-sizing: border-box;                /* Guarantees clean lining on the right edge */
+}
+
+/* Specific styling for the message block */
+.field2 textarea {
+  height: 220px;                         /* Makes it deep like the image */
+  resize: vertical;                      /* Controls manual resizing */
+}
+
+/* Placeholder font treatment */
+.field2 input::placeholder,
+.field2 textarea::placeholder {
+  color: #757575;
+  font-weight: 300;
+}
+
+/* Button Alignment & Styling */
+.button-container {
+  display: flex;
+  justify-content: center;               /* Centers the button horizontally */
+  margin-top: 10px;
+}
+
+#button7 {
+  background-color: #808080;             /* Medium flat gray */
+  color: #ffffff;
+  border: none;
+  width: 45%;                            /* Width restriction matching photo proportions */
+  max-width: 450px;
+  padding: 14px 0;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#button7:hover {
+  background-color: #666666;             /* Subtle darkening response on hover */
+}
+
+@media screen and (max-width:500px) {
+    #portfolio{
+        height: 10500px;
+        
+        
+    }
+
+    .Portfolio-section .Portfolio {
+        
+        height: 150px;
+    }
+
+    .wedding-section .wedding{
+        height: 140px;
+        
+
+    }
+    .collection-section .collection{
+        height: 140px;
+        
+
+    }
+    #collection{
+        height: 100%;
+    }
+    .booking-section .booking{
+        height: 140px;
+        
+
+    }
+    #collection{
+        height: 100%;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:800px) {
+    #portfolio{
+        height: 100%;
+        
+        
+    }
+
+    .Portfolio-section .Portfolio {
+        
+        height: 150px;
+    }
+    .wedding-section .wedding{
+        height: 90px;
+        
+
+    }
+    #wedding{
+        height: 100%;
+    }
+    .collection-section .collection{
+        height: 140px;
+        
+
+    }
+    #collection{
+        height: 200px;
+        color: #000000;
+    }
+
+   .collection-card {
+    background: #ffffff;
+    border: 1px solid #999;
+    box-shadow: #00000062 10px 10px 20px 0px;
+
+    text-align: center;
+
+    width: calc(50% - 20px);  /* Two cards per row */
+    max-width: 500px;
+    min-width: 280px;
+    margin-top: 70px;
+    height: 10px;
+    }
+}
+    
+    
+
+@media screen and (max-width:900px) {
+    
+    #portfolio{
+        height: 100%;
+        
+        
+    }
+
+    .Portfolio-section .Portfolio {
+        
+        height: 150px;
+    }
+    .wedding-section .wedding{
+        height: 140px;
+        
+
+    }
+    .collection-section .collection{
+        height: 140px;
+        
+
+    }
+    #collection{
+        height: 100%;
+    }
+    .collection-card {
+        color: #000000;
+        height: 10px;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:1100px) {
+    :root {
+    --font-size-m: 1rem;
+    --font-size-1: 1.3rem;
+    --font-size-x1: 1.5rem;
+    --font-size-xxl: 1.8rem;
+    }
+    .nav{
+        top: 0px;
+        position: sticky;
+    }
+    body.menu-open  nav::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+      
+        backdrop-filter: blur(3px); /* Optional: adds a blur effect to the background */
+        transition: ease 0.3s;
+    }
+    .navbar :where(#menu-open-button, #menu-close-button) {
+    display: block;
+    }
+    .image-wrapper {
+        width: 1000px;
+    }
+    .container {
+            flex-direction: column;
+            display:center;
+            width: 100%;
+            margin-left: 0px;
+            padding: 0px;
+        }
+        
+        .image-wrapper {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            aspect-ratio: 1 / 1;
+        }
+        
+        
+        .content-box {
+            margin-left: 0;
+            margin-top: -40px; /* Overlaps vertically on mobile devices */
+            width: 400px;
+            
+        }
+        
+        .main{
+        height: 900px;
+        } 
+
+    .navbar .navmenu { 
+        display: block; 
+        position: fixed; 
+        left: -300px;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        padding-top: 100px;
+        background:#feebd0;
+        transition: ease 0.3s;
+    }
+    body.menu-open .navbar .navmenu {
+        left: 0;
+
+
+    }
+    body.menu-open .navbar .navmenu {
+        left: -300;
+
+
+    }
+
+    .navbar .navmenu .navlink {
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-top: 17px;
+
+    
+    }
+    .navbar #menu-close-button {
+        color: rgb(0, 0, 0);
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 1.5rem;
+        transition: ease 0.3s;
+    }
+
+    #menu-open-button{
+        color: rgb(255, 0, 0);
+        margin-right: 47px;
+        transition: ease 0.3s;
+    } 
+     .test{
+        width: 100%;
+    margin-left: 20px;
+    }
+    #menu-close-button:hover{
+    background-color: rgb(255, 255, 255);
+        color: rgb(255, 0, 0);
+        border-radius: 20px;
+        padding: 2px;
+    }
+    .Portfolio{
+    width: 100%;
+    text-align: center;
+    height: 90px;
+    
+    padding: 20px;
+    
+    }
+    .Portfolio h1{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 20px;
+    box-align:center;
+    
+    margin-left: 20px;
+    font-family: "Playwrite GB S", cursive;
+    text-transform: uppercase;
+    }
+    .Portfolio-section {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    }
+    .Portfolio-section .Portfolio-subtitle{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #000000;
+    text-align: center;
+    margin: 10px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .wedding{
+    width: 100%;
+    text-align: center;
+    height: 90px;
+    
+    padding: 20px;
+    
+    }
+    .wedding-section {
+    background-color: #f7f4f4;
+    width: 100%;
+    height: 100%;
+    }
+    .wedding h1{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 18px;
+    box-align:center;
+    
+    margin-left: 20px;
+    font-family: "Playwrite GB S", cursive;
+    text-transform: uppercase;
+    }
+    
+    .booking{
+    width: 100%;
+    text-align: center;
+    height: 90px;
+    
+    padding: 8px;
+    }
+    .booking h1{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 17px;
+    box-align:center;
+    
+    margin-left: 20px;
+    font-family: "Playwrite GB S", cursive;
+    text-transform: uppercase;
+    }
+    .booking-section {
+    background-color: #fdfcfc;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    
+    }
+    
+    .services-container {
+    grid-template-columns: 1fr; /* Stacks cards into 1 column on mobile */
+    gap: 20px;
+    padding: 10px;
+  }
+  .collection-section {
+    background-color: #ffffff;
+    width: 100%;
+    height:1300px;
+    margin-bottom: 20px;
+  }
+  .collection-box {
+    display: flex;
+    flex-wrap: wrap;          /* Allow cards to move to next line */
+    justify-content: center;
+    gap: 20px;                /* Space between cards */
+
+    max-width: 1024px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.collection-card {
+    background: #ffffff;
+    border: 1px solid #999;
+    box-shadow: #00000062 10px 10px 20px 0px;
+
+    text-align: center;
+
+    width: calc(50% - 20px);  /* Two cards per row */
+    max-width: 500px;
+    min-width: 280px;
+    margin-top: 70px;
+    height: 240px;
+}
+
+
+  .collection{
+    width: 100%;
+    text-align: center;
+    height: 90px;
+    
+    padding: 20px;
+    
+    }
+    .collection h1{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 14px;
+    box-align:center;
+    
+    margin-left: 20px;
+    font-family: "Playwrite GB S", cursive;
+    text-transform: uppercase;
+    }
+    .collection-section .collection-subtitle{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #ff0000;
+    text-align: center;
+    margin: 10px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .contact{
+    width: 100%;
+    text-align: center;
+    height: 90px;
+    
+    padding: 10px;
+    
+    }
+    .contact h1{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 15px;
+    box-align:center;
+    
+    margin-left: 20px;
+    font-family: "Playwrite GB S", cursive;
+    text-transform: uppercase;
+    }
+    .contact-section .contact-subtitle{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #000000;
+    text-align: center;
+    margin: 10px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .inside-contact{
+    width: 80%;
+    height: 1200px;
+    font-family: "Playwrite GB S", cursive;
+    background-color: #feebd0;
+    padding: 20px;
+    margin-left: 10%;
+}
+
+.contact-phone{
+    margin-top:30px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.contact-phoneno{
+    margin-top:5px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.contact-email{
+    margin-top:-57px;
+    font-size: 20px;
+    margin-left: 180px;
+}
+.contact-emailno{
+    margin-top:4px;
+    font-size: 18px;
+    margin-left: 180px;
+}
+.contact-media{
+    margin-top:5px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.contact-mediano{
+    margin-top:5px;
+    font-size: 18px;
+    margin-left: 010px;
+}
+}
